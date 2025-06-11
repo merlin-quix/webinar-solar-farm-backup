@@ -1,0 +1,18 @@
+name: average-panel-values
+language: python
+variables:
+  - name: input
+    inputType: InputTopic
+    multiline: false
+    description: Input topic to read solar panel data from
+    defaultValue: enriched_data
+    required: true
+  - name: output
+    inputType: OutputTopic
+    multiline: false
+    description: Output topic to write average values to
+    defaultValue: downsampled_data
+    required: true
+dockerfile: Dockerfile
+runEntryPoint: main.py
+defaultFile: main.py
