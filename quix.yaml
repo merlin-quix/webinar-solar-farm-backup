@@ -210,7 +210,7 @@ deployments:
     deploymentType: Service
     resources:
       cpu: 1000
-      memory: 8000
+      memory: 2000
       replicas: 1
     network:
       serviceName: postgresql
@@ -266,7 +266,7 @@ deployments:
     version: latest
     deploymentType: Service
     resources:
-      cpu: 8000
+      cpu: 2000
       memory: 4000
       replicas: 1
     state:
